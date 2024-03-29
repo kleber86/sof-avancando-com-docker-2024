@@ -15,9 +15,9 @@
 - [x] Validando implantação do visualizador
 - [x] Configurando volume persistente
 - [x] Visualizando logs
-- [ ] Criando um cluster de Docker Swarm na Digital Ocean
-- [ ] Implantando aplicativo conteinerizado na Digital Ocean
-- [ ] 
+- [x] Criando um cluster de Docker Swarm na Digital Ocean
+- [x] Implantando aplicativo conteinerizado na Digital Ocean
+
 ### :hammer: Tecnologias
  <ul>
     <li>Docker</li>
