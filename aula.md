@@ -77,3 +77,53 @@ services:
 networks:
   webnet:
 ```
+
+# Adicionando o Redis
+```
+version: '3'
+services:
+  web:
+    image: jacksonlima91/app-python:v1
+    deploy: 
+      replicas: 3
+      resources: 
+        limits:
+          cpus: "10"
+          memory: 50mb
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "81:81"
+    networks:
+      - webnet
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports: 
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy: 
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - "./data:/data"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    command: redis-server --appendonly yes
+    networks:
+      - webnet
+networks:
+  webnet:
+```
+
+# Visualizar os logs
+```
+docker service logs nome_do_servico
+```

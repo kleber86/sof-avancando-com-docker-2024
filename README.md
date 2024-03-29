@@ -5,16 +5,16 @@
 </div>
 
 ### :memo: Aulas
-- [ ] Introdução
-- [ ] Criando um cluster de Docker Swarm
-- [ ] Configurando nós
-- [ ] Implantando aplicativo em cluster swarm
-- [ ] Validando implantação
-- [ ] Escalando aplicativo
-- [ ] Atualizando pilha
-- [ ] Validando implantação do visualizador
-- [ ] Configurando volume persistente
-- [ ] Visualizando logs
+- [x] Introdução
+- [x] Criando um cluster de Docker Swarm
+- [x] Configurando nós
+- [x] Implantando aplicativo em cluster swarm
+- [x] Validando implantação
+- [x] Escalando aplicativo
+- [x] Atualizando pilha
+- [x] Validando implantação do visualizador
+- [x] Configurando volume persistente
+- [x] Visualizando logs
 - [ ] Criando um cluster de Docker Swarm na Digital Ocean
 - [ ] Implantando aplicativo conteinerizado na Digital Ocean
 - [ ] 
